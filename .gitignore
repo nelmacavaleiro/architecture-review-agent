@@ -1,0 +1,5 @@
+# Reviews produced while trying the agent locally
+reviews/
+
+# Personal Claude Code settings, such as a plugin installed locally
+.claude/settings.local.json

@@ -1,0 +1,8 @@
+{
+  "name": "architecture-review",
+  "description": "Drafts an architecture review of a design proposal against a team's own principles, ADRs and NFRs, for an architect to decide",
+  "version": "0.1.0",
+  "author": {
+    "name": "Nelma Cavaleiro"
+  }
+}

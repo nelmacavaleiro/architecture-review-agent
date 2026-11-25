@@ -1,0 +1,14 @@
+{
+  "name": "nelma-cavaleiro",
+  "description": "Plugins by Nelma Cavaleiro",
+  "owner": {
+    "name": "Nelma Cavaleiro"
+  },
+  "plugins": [
+    {
+      "name": "architecture-review",
+      "source": "./plugins/architecture-review",
+      "description": "Drafts an architecture review of a design proposal against a team's own principles, ADRs and NFRs, for an architect to decide"
+    }
+  ]
+}
