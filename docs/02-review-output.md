@@ -119,6 +119,8 @@ All findings in this section are graded Low.
 
 Two Mermaid diagrams, drawn only from what the proposal states. They let the architect check quickly whether the agent has understood the design. Anything the proposal leaves unclear is shown as a note, never filled in.
 
+**Change in version 0.1.1:** Mermaid's C4 layout overlapped labels on GitHub, so both diagrams are now drawn as top-to-bottom flowcharts, with the C4 colours for people, the proposed system and external systems.
+
 **C4-style context diagram:** the proposed system, the people who use it and the external systems it connects to.
 
 ````markdown
