@@ -3,3 +3,6 @@ reviews/
 
 # Personal Claude Code settings, such as a plugin installed locally
 .claude/settings.local.json
+
+# Results written by claude plugin eval
+plugins/architecture-review/evals/results/
