@@ -11,6 +11,7 @@ Expected severities:
 - ADR-0005 Use Azure SQL Managed Instance: expected High
 - ADR health: relies on superseded ADR-0002: expected Low
 - KM-P05 Prefer managed Azure services: expected Medium (also accepted: Concern, Low)
+- NFR-06 Audit retention: expected Medium (also accepted: May be combined with finding 1 or 2 if NFR-06 is cited)
 
 PASS if every one of these findings that the review reports carries the expected severity or an accepted alternative. Findings the review does not report are ignored here.
 FAIL if any reported finding from this list carries a different severity.

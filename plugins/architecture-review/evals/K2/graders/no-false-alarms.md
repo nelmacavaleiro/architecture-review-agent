@@ -11,6 +11,7 @@ The only problems that should be graded Medium or High are these:
 - ADR-0005 Use Azure SQL Managed Instance (Conflict)
 - ADR health: relies on superseded ADR-0002 (ADR health issue)
 - KM-P05 Prefer managed Azure services (Breach)
+- NFR-06 Audit retention (Target missed)
 
 These details are known not to be problems:
 - Recovery: KM-P02 and NFR-02 are met (4 hours, 15 minutes, tested before go-live).
