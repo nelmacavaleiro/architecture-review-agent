@@ -4,6 +4,8 @@ A Claude Code plugin that drafts an architecture review of a design proposal. It
 
 The agent never approves or rejects a proposal. It prepares the review so that the architect's time goes on judgement rather than on cross-checking documents.
 
+**See a [sample review](examples/sample-review/W1-housing-repairs-portal-review.md)** written by the agent for a fictional council's housing repairs portal, with [notes comparing it with the answer key](examples/sample-review/README.md).
+
 ## Results at a glance
 
 Version 0.1.0 caught every planted problem in the test set (48 of 48) and passed all four boundary tests. Two of the five targets were missed; both are explained in the notes below.
@@ -171,7 +173,7 @@ plugins/architecture-review/
   skills/check/references/           input formats, severity rules, boundary rules, review template
   evals/                             the 20 test cases and their graders
 docs/                                the step documents
-examples/                            the three fictional organisations
+examples/                            the three fictional organisations and a sample review
 tests/                               proposals, answer keys, modified packs and answer key changes
 tools/                               the test builder and the results collection script
 ```
