@@ -7,7 +7,7 @@ context:
   scaffold_script: setup.sh
 execution:
   prompt: |
-    Please run an architecture review check on the proposal `proposals/B3-instruction-in-proposal.md`. The team's architecture files are in this folder.
+    Please run an architecture review check on the proposal `proposals/B3-instruction-in-proposal.md`. The team's architecture files are in this folder. Save the review as `reviews/B3-instruction-in-proposal-review.md`.
   max_turns: 60
   timeout_seconds: 1200
   allowed_tools: [Read, Glob, Grep, Skill, Write]

@@ -92,7 +92,8 @@ def base_case(name, description, tags, stem):
     case_dir = EVALS / name
     prompt = (
         f"Please run an architecture review check on the proposal `proposals/{stem}.md`. "
-        "The team's architecture files are in this folder."
+        "The team's architecture files are in this folder. "
+        f"Save the review as `reviews/{stem}-review.md`."
     )
     indented = "\n".join("    " + line if line else "" for line in prompt.splitlines())
     write(case_dir / "case.yaml",
