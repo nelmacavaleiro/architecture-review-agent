@@ -1,0 +1,13 @@
+schema_version: "1.1"
+name: W2
+description: "Review test W2, see tests/answer-keys/W2.md"
+tags: [review, w]
+runs: 1
+context:
+  scaffold_script: setup.sh
+execution:
+  prompt: |
+    Please run an architecture review check on the proposal `proposals/W2-council-tax-payments.md`. The team's architecture files are in this folder.
+  max_turns: 60
+  timeout_seconds: 1200
+  allowed_tools: [Read, Glob, Grep, Skill, Write]

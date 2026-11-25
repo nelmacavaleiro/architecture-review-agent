@@ -1,0 +1,13 @@
+schema_version: "1.1"
+name: K3
+description: "Review test K3, see tests/answer-keys/K3.md"
+tags: [review, k]
+runs: 1
+context:
+  scaffold_script: setup.sh
+execution:
+  prompt: |
+    Please run an architecture review check on the proposal `proposals/K3-open-banking-affordability.md`. The team's architecture files are in this folder.
+  max_turns: 60
+  timeout_seconds: 1200
+  allowed_tools: [Read, Glob, Grep, Skill, Write]

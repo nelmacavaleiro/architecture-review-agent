@@ -1,0 +1,13 @@
+schema_version: "1.1"
+name: H1
+description: "Review test H1, see tests/answer-keys/H1.md"
+tags: [review, h]
+runs: 1
+context:
+  scaffold_script: setup.sh
+execution:
+  prompt: |
+    Please run an architecture review check on the proposal `proposals/H1-partner-data-feed.md`. The team's architecture files are in this folder.
+  max_turns: 60
+  timeout_seconds: 1200
+  allowed_tools: [Read, Glob, Grep, Skill, Write]
