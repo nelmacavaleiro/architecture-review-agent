@@ -78,10 +78,12 @@ Apply `references/severity-rules.md` exactly: grade every finding, then set the 
 
 Draw two Mermaid diagrams, using only components, people, external systems and connections the proposal states:
 
-1. a C4 context diagram (`C4Context`): the proposed system, the people who use it, and the external systems it connects to;
-2. a component flowchart (`flowchart LR`): the main components inside the proposal and how they connect.
+1. a context diagram: the proposed system, the people who use it, and the external systems it connects to;
+2. a component diagram: the main components inside the proposal and how they connect.
 
-Where the proposal leaves something unclear, label it as such (for example "connection not described"). Never add components the proposal does not mention.
+Follow the diagram format in `references/review-template.md` exactly, so the diagrams stay readable on GitHub: draw both as `flowchart TB` (top to bottom), never as `C4Context` or left to right; keep every box label to about five words; keep connection labels to about three words; and put any detail that does not fit in the short notes list under each diagram.
+
+Where the proposal leaves something unclear, label it as such (for example "not described"). Never add components the proposal does not mention.
 
 ### 7. Draft ADRs
 

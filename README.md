@@ -39,7 +39,7 @@ Each review follows a fixed structure, specified in [docs/02-review-output.md](d
 7. Missing information
 8. Questions for the proposer
 9. General good practice observations
-10. Diagrams (a context diagram and a flowchart, in Mermaid)
+10. Diagrams (a context diagram and a component diagram, in Mermaid)
 11. Draft ADRs for decisions the proposal makes
 12. Limits of the review and when to escalate
 13. Architect's decision (always left blank)
@@ -177,6 +177,13 @@ examples/                            the three fictional organisations and a sam
 tests/                               proposals, answer keys, modified packs and answer key changes
 tools/                               the test builder and the results collection script
 ```
+
+## Version history
+
+| Version | Date | Changes |
+|---|---|---|
+| 0.1.0 | 25 November 2026 | First version. The evaluation results above are for this version |
+| 0.1.1 | 25 November 2026 | Formatting only: both diagrams drawn top to bottom with short labels, so they stay readable on GitHub, and header, draft ADR and decision fields listed one per line. How findings are identified and graded is unchanged |
 
 ## Licence
 
