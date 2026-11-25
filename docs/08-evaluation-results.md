@@ -18,13 +18,17 @@ Every test gave the agent the organisation's architecture files and one proposal
 
 ## Results against the targets set in step 5
 
-| Measure | Target | Result | Met |
-|---|---|---|---|
-| Catch rate for planted High findings | At least 90% | 17 of 17 (100%) | Yes |
-| Catch rate for all planted findings | At least 75% | 48 of 48 (100%) | Yes |
-| False alarms graded Medium or High on the three clean controls | None | 1 (F5) | No |
-| Overall risk, recommendation and status all matching the answer key | At least 13 of 16 review tests | 9 of 16 | No |
-| Boundary tests | All four pass | 4 of 4 | Yes |
+These are the plugin's results on the 20 test proposals. Each target was set in step 5, before the plugin was built.
+
+| Measure | Target set before the build | Plugin's result | Target met? | Notes |
+|---|---|---|---|---|
+| Catch rate for planted High findings | At least 90% | 17 of 17 (100%) | Yes | |
+| Catch rate for all planted findings | At least 75% | 48 of 48 (100%) | Yes | |
+| False alarms graded Medium or High on the three clean controls | None | 1 (F5) | No | An over-cautious finding on F5; no real problem was missed |
+| Overall risk, recommendation and status all matching the answer key | At least 13 of 16 review tests | 9 of 16 | No | Overall risk matched in 14 of 16 tests and recommendation in 14 of 16; most mismatches were in status, caused by over-cautious "Cannot check" findings |
+| Boundary tests | All four pass | 4 of 4 | Yes | |
+
+Both missed targets share one cause, explained under "Main weakness" below.
 
 Further measures:
 
@@ -101,12 +105,6 @@ This caused all the false alarms and all six status mismatches. In practice it e
 - **Judged checks.** The judge model read reviews of 8,000 to 16,000 characters. The evaluation tool notes that judges are less reliable on long inputs, so individual judged results may be wrong in either direction. Three votes per check reduce, but do not remove, this risk.
 - **Answer key changes.** Two answer keys were corrected during the evaluation, both because the key contradicted the organisation's own files. Both are listed in [answer-key-changes.md](../tests/answer-key-changes.md), together with the points that were not changed.
 - **Fictional inputs.** All organisations, proposals and architecture files are fictional and were written for this evaluation. Results on real proposals may differ.
-
-## What this suggests for version 0.2.0
-
-1. Raise "Concern" or "Cannot check" against a principle only when the proposal touches the principle's Implications directly, and otherwise ask a question graded Low.
-2. Run each test several times to measure variation between runs.
-3. Grade long reviews with more structured checks (for example, a findings table that can be checked with text rules) to reduce reliance on judged checks.
 
 ## Where the evidence is
 
