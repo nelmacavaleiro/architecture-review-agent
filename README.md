@@ -4,7 +4,9 @@ A Claude Code plugin that drafts an architecture review of a design proposal. It
 
 The agent never approves or rejects a proposal. It prepares the review so that the architect's time goes on judgement rather than on cross-checking documents.
 
-**[Watch the demo](docs/media/architecture-review-agent-demo.mp4)** (80 seconds, captions only, no sound needed): the agent reviewing a fictional council's housing repairs portal, from command to finished review.
+**Demo** (80 seconds, captions only, no sound needed): the agent reviewing a fictional council's housing repairs portal, from command to finished review.
+
+https://github.com/user-attachments/assets/348b8797-46d8-4512-8cd6-3cd5c7f216cb
 
 **See a [sample review](examples/sample-review/W1-housing-repairs-portal-review.md)** written by the agent for a fictional council's housing repairs portal, with [notes comparing it with the answer key](examples/sample-review/README.md).
 
